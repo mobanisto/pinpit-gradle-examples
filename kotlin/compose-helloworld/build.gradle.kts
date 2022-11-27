@@ -107,7 +107,6 @@ pinpit.desktop {
                 }
             }
             windows {
-                console = true
                 dirChooser = true
                 perUserInstall = true
                 shortcut = true
