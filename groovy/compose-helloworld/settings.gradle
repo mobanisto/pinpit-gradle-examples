@@ -1,0 +1,15 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+        gradlePluginPortal()
+    }
+    plugins {
+        def kotlinVersion = getProperty("kotlin.version")
+        def composeVersion = getProperty("compose.version")
+        def pinpitVersion = getProperty("pinpit.version")
+        id 'org.jetbrains.kotlin.jvm' version kotlinVersion
+        id 'org.jetbrains.compose' version composeVersion
+        id 'de.mobanisto.pinpit' version pinpitVersion
+    }
+}
+rootProject.name = "pinpit-compose-helloworld"
