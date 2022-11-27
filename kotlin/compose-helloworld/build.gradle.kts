@@ -113,7 +113,7 @@ pinpit.desktop {
                 shortcut = true
                 menu = true
                 menuGroup = "pinpit"
-                upgradeUuid = "2d6ff464-75be-40ad-a256-56420b9cc374"
+                upgradeUuid = "64BFBE38-36BA-43A4-B843-F3B98E39B24F"
                 packageVersion = versionCode
                 msi {
                     arch = "x64"

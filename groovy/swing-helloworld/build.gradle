@@ -105,7 +105,7 @@ pinpit.desktop {
                 shortcut = true
                 menu = true
                 menuGroup = "pinpit"
-                upgradeUuid = "2d6ff464-75be-40ad-a256-56420b9cc374"
+                upgradeUuid = "82A07773-86F5-4C66-9E17-AD2E2C08EB4F"
                 packageVersion = versionCode
                 msi {
                     arch = "x64"
