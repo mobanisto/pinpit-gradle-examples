@@ -107,11 +107,11 @@ pinpit.desktop {
                 menuGroup = "pinpit"
                 upgradeUuid = "82A07773-86F5-4C66-9E17-AD2E2C08EB4F"
                 packageVersion = versionCode
+                iconFile.set(project.file("src/main/packaging/windows/hello.ico"))
                 msi {
                     arch = "x64"
                     bitmapBanner.set(project.file("src/main/packaging/windows/banner.bmp"))
                     bitmapDialog.set(project.file("src/main/packaging/windows/dialog.bmp"))
-                    icon.set(project.file("src/main/packaging/windows/hello.ico"))
                 }
             }
             macOS {
