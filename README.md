@@ -1,7 +1,7 @@
 # Examples for pinpit using Gradle
 
 This repository contains a few examples on how to configure
-[pinpit](https://github.com/mobanisto/pinpit-package-plugin) for
+[pinpit](https://github.com/mobanisto/pinpit-gradle-plugin) for
 Gradle-based builds.
 
 There are examples for the classic Groovy-based DSL in the `groovy`
