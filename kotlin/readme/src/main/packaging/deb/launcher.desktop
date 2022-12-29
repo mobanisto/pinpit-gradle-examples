@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=PinpitComposeHelloWorld
+Comment=Test description
+Exec=/opt/pinpit-compose-hello-world/bin/PinpitComposeHelloWorld
+Icon=/opt/pinpit-compose-hello-world/lib/PinpitComposeHelloWorld.png
+Terminal=false
+Type=Application
+Categories=System;Utility
+MimeType=
