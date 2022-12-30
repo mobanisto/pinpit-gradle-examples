@@ -81,8 +81,8 @@ pinpit.desktop {
                 iconFile.set(project.file("src/main/packaging/windows/hello.ico"))
                 msi {
                     arch = "x64"
-                    bitmapBanner.set(project.file("src/desktopMain/packaging/windows/banner.bmp"))
-                    bitmapDialog.set(project.file("src/desktopMain/packaging/windows/dialog.bmp"))
+                    bitmapBanner.set(project.file("src/main/packaging/windows/banner.bmp"))
+                    bitmapDialog.set(project.file("src/main/packaging/windows/dialog.bmp"))
                 }
             }
         }
