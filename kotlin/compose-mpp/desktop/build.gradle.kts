@@ -60,7 +60,7 @@ pinpit.desktop {
                 debPackageVersion = versionCode
                 appCategory = "utils"
                 menuGroup = "System;Utility;"
-                iconFile.set(project.file("src/main/packaging/windows/hello.png"))
+                iconFile.set(project.file("src/main/packaging/deb/hello.png"))
                 deb("UbuntuFocalX64") {
                     qualifier = "ubuntu-20.04"
                     arch = "x64"
