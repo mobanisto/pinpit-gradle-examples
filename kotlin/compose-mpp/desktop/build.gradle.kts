@@ -38,7 +38,7 @@ dependencies {
     linuxX64(compose.desktop.linux_x64)
 }
 
-val versionCode by extra("1.0.1")
+val versionCode by extra("1.0.0")
 
 pinpit.desktop {
     application {
