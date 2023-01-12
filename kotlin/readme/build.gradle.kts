@@ -101,10 +101,7 @@ pinpit.desktop {
             }
             windows {
                 dirChooser = true
-                perUserInstall = true
                 shortcut = true
-                menu = true
-                menuGroup = "pinpit"
                 upgradeUuid = "96D463E4-3317-44DA-88CD-AD61B845023F"
                 packageVersion = versionCode
                 iconFile.set(project.file("src/main/packaging/windows/hello.ico"))

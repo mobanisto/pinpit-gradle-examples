@@ -101,9 +101,7 @@ pinpit.desktop {
             }
             windows {
                 dirChooser = true
-                perUserInstall = true
                 shortcut = true
-                menu = true
                 menuGroup = "pinpit"
                 upgradeUuid = "82A07773-86F5-4C66-9E17-AD2E2C08EB4F"
                 packageVersion = versionCode

@@ -72,9 +72,7 @@ pinpit.desktop {
             }
             windows {
                 dirChooser = true
-                perUserInstall = true
                 shortcut = true
-                menu = true
                 menuGroup = "compose"
                 upgradeUuid = "2d6ff464-75be-40ad-a256-56420b9cc374"
                 packageVersion = versionCode
