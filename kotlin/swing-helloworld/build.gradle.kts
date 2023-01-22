@@ -8,21 +8,16 @@ repositories {
     google()
 }
 
-val attributeUsage = Attribute.of("org.gradle.usage", String::class.java)
-
 val currentOs: Configuration by configurations.creating {
     extendsFrom(configurations.implementation.get())
-    attributes { attribute(attributeUsage, "java-runtime") }
 }
 
 val windowsX64: Configuration by configurations.creating {
     extendsFrom(configurations.implementation.get())
-    attributes { attribute(attributeUsage, "java-runtime") }
 }
 
 val linuxX64: Configuration by configurations.creating {
     extendsFrom(configurations.implementation.get())
-    attributes { attribute(attributeUsage, "java-runtime") }
 }
 
 sourceSets {

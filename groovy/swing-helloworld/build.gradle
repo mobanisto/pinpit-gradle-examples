@@ -8,20 +8,15 @@ repositories {
     google()
 }
 
-def attributeUsage = Attribute.of("org.gradle.usage", String)
-
 configurations {
     currentOs {
         extendsFrom implementation
-        attributes { attribute(attributeUsage, "java-runtime") }
     }
     windowsX64 {
         extendsFrom implementation
-        attributes { attribute(attributeUsage, "java-runtime") }
     }
     linuxX64 {
         extendsFrom implementation
-        attributes { attribute(attributeUsage, "java-runtime") }
     }
 }
 
