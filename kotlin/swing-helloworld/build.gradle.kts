@@ -20,6 +20,10 @@ val linuxX64: Configuration by configurations.creating {
     extendsFrom(configurations.implementation.get())
 }
 
+val linuxArm64: Configuration by configurations.creating {
+    extendsFrom(configurations.implementation.get())
+}
+
 sourceSets {
     main {
         java {
@@ -92,6 +96,10 @@ pinpit.desktop {
                         "libpng16-16", "libstdc++6", "libuuid1", "xdg-utils", "zlib1g",
                         "libnotify4"
                     )
+                }
+                distributableArchive {
+                     format = "tar.gz"
+                     arch = "arm64"
                 }
             }
             windows {

@@ -21,6 +21,11 @@ val linuxX64: Configuration by configurations.creating {
     attributes { attribute(attributeUsage, "java-runtime") }
 }
 
+val linuxArm64: Configuration by configurations.creating {
+    extendsFrom(configurations.implementation.get())
+    attributes { attribute(attributeUsage, "java-runtime") }
+}
+
 sourceSets {
     main {
         java {
@@ -36,6 +41,7 @@ dependencies {
     currentOs(compose.desktop.currentOs)
     windowsX64(compose.desktop.windows_x64)
     linuxX64(compose.desktop.linux_x64)
+    linuxArm64(compose.desktop.linux_arm64)
 }
 
 val versionCode by extra("1.0.0")
@@ -68,6 +74,10 @@ pinpit.desktop {
                         "libc6", "libexpat1", "libgcc-s1", "libpcre3", "libuuid1", "xdg-utils",
                         "zlib1g", "libnotify4"
                     )
+                }
+                distributableArchive {
+                    format = "tar.gz"
+                    arch = "arm64"
                 }
             }
             windows {

@@ -25,6 +25,10 @@ configurations {
         extendsFrom implementation
         attributes { attribute(attributeUsage, "java-runtime") }
     }
+    linuxArm64 {
+        extendsFrom implementation
+        attributes { attribute(attributeUsage, "java-runtime") }
+    }
 }
 
 sourceSets {
@@ -42,6 +46,7 @@ dependencies {
     currentOs compose.desktop.currentOs
     windowsX64 compose.desktop.windows_x64
     linuxX64 compose.desktop.linux_x64
+    linuxArm64 compose.desktop.linux_arm64
 }
 
 ext.versionCode = "1.0.0"
@@ -102,6 +107,10 @@ pinpit.desktop {
                             "libpng16-16", "libstdc++6", "libuuid1", "xdg-utils", "zlib1g",
                             "libnotify4"
                     )
+                }
+                distributableArchive {
+                    format = "tar.gz"
+                    arch = "arm64"
                 }
             }
             windows {
