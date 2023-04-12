@@ -29,6 +29,11 @@ val linuxX64: Configuration by configurations.creating {
     attributes { attribute(attributeUsage, "java-runtime") }
 }
 
+val macosArm64: Configuration by configurations.creating {
+    extendsFrom(configurations.implementation.get())
+    attributes { attribute(attributeUsage, "java-runtime") }
+}
+
 sourceSets {
     main {
         java {
@@ -44,6 +49,7 @@ dependencies {
     currentOs(compose.desktop.currentOs)
     windowsX64(compose.desktop.windows_x64)
     linuxX64(compose.desktop.linux_x64)
+    macosArm64(compose.desktop.macos_arm64)
 }
 
 val versionCode by extra("1.0.0")
@@ -116,7 +122,13 @@ pinpit.desktop {
                 }
             }
             macOS {
-                dockName = "CustomDockName"
+                packageName = "PinpitComposeHelloWorld"
+                bundleID = "de.mobanisto.hello.world"
+                appCategory = "public.app-category.utilities"
+                distributableArchive {
+                    format = "zip"
+                    arch = "arm64"
+                }
             }
         }
     }
