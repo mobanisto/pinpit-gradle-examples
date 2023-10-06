@@ -57,7 +57,6 @@ pinpit.desktop {
                 shortcut = true
                 packageName = "pinpit-swing-hello-world"
                 debMaintainer = "example@example.com"
-                menuGroup = "pinpit"
                 debPackageVersion = versionCode
                 appCategory = "utils"
                 menuGroup = "System;Utility"
