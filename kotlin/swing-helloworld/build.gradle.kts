@@ -114,9 +114,6 @@ pinpit.desktop {
                     bitmapDialog.set(project.file("src/main/packaging/windows/dialog.bmp"))
                 }
             }
-            macOS {
-                dockName = "CustomDockName"
-            }
         }
     }
 }
