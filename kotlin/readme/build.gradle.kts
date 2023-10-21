@@ -121,7 +121,6 @@ pinpit.desktop {
                 }
             }
             macOS {
-                packageName = "PinpitComposeHelloWorld"
                 bundleID = "de.mobanisto.hello.world"
                 appCategory = "public.app-category.utilities"
                 distributableArchive {
